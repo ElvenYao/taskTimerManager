@@ -211,7 +211,7 @@ You can find the more information about these tools
 License
 -----------------
 
-Please see [LICENSE](https://github.com/mperham/sidekiq/blob/master/LICENSE) for licensing details.
+* The [MIT License](http://opensource.org/licenses/MIT)
 
 
 Author
