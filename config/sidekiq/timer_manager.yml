@@ -1,0 +1,18 @@
+:dynamic: true
+:schedule:
+  time_manager:
+    cron: '0 0 1 * * *'   # Runs once per day
+    class: TimeManagerWorker
+:queues:
+    - [time_manager, 1]
+    - [task_time, 3]
+    - [push, 2]
+    - [notice, 2]
+development:
+  :concurrency: 1
+staging:
+  :concurrency: 1
+production:
+  :concurrency: 2
+:pidfile: tmp/pids/timer_manager.pid
+:logfile: log/sidekiq_timer_manager.log
