@@ -1,6 +1,5 @@
 require 'sidekiq'
 require 'sidekiq-scheduler'
-require 'rufus-scheduler'
 
 class TaskTimeWorker
   include Sidekiq::Worker
